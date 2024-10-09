@@ -13,7 +13,7 @@ interface PageProps {
     utm_source?: string
     utm_medium?: string
   }
-}
+} 
 
 export default function Home({ searchParams }: PageProps) {
 
