@@ -58,6 +58,40 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
         }
     }, [cont])
 
+    useEffect(() => {
+        setTimeout(() => {
+            const handleChange = (element: HTMLSelectElement) => {
+                const select = document.querySelectorAll<HTMLSelectElement>('select');
+                const label = document.querySelector<HTMLLabelElement>('label[for="field[641]"]');
+
+                console.log(element)
+                select.forEach((item) => {
+                    if (item && item.hasAttribute('data-gtm-form-interact-field-id')) {
+                        if (label) label.style.display = 'none';
+                    } else {
+                        if (label) label.style.display = 'block';
+                    }
+                })
+            };
+
+            const selectElements = document.querySelectorAll<HTMLSelectElement>('select');
+
+            // Adiciona o evento change a cada select
+            selectElements.forEach(selectElement => {
+                selectElement.addEventListener('change', () => {
+                    const labelId = selectElement['name'].split('[')[1].replace(']', '')
+
+                    const label = document.querySelector<HTMLLabelElement>(`label[for="field[${labelId}]"]`);
+
+                    if (!label)
+                        return
+
+                    label.style.display = 'none';
+                });
+            });
+        }, 2000)
+    }, []);
+
     return (
         <div className={`fixed top-0 left-0 w-full h-screen ${modal ? 'flex z-[999]' : 'hidden'} items-center justify-center`}>
             <div

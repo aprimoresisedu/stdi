@@ -53,5 +53,10 @@ form ._form-label {
   position: absolute;
   transform: translateY(4px) translateX(18px);
   font-weight: normal!important;
-  opacity: .6!important;
+  /* opacity: .6!important; */
+}
+
+/* Seleciona o label e esconde-o quando o select tem um valor válido */
+#_forms_13 ._form-content ._form_element ._field-wrapper select:valid + label._form-label {
+  opacity: 0!important;
 }
