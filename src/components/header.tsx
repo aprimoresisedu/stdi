@@ -10,7 +10,7 @@ interface HeaderProps {
         utm_source?: string
         utm_medium?: string
     }
-    modal: boolean
+    modal: boolean 
     setModal: React.Dispatch<SetStateAction<boolean>>
 }
 
