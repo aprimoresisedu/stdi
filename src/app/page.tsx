@@ -17,7 +17,7 @@ interface PageProps {
 
 export default function Home({ searchParams }: PageProps) {
 
-  const [modal, setModal] = useState<boolean>(true)
+  const [modal, setModal] = useState<boolean>(false)
 
   return (
     <>
