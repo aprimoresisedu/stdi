@@ -59,7 +59,7 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
     }, [cont])
 
     return (
-        <div className={`absolute top-0 left-0 w-full h-screen ${modal ? 'flex z-[999]' : 'hidden'} items-center justify-center`}>
+        <div className={`fixed top-0 left-0 w-full h-screen ${modal ? 'flex z-[999]' : 'hidden'} items-center justify-center`}>
             <div
                 onClick={() => setModal(false)}
                 className="absolute top-0 left-0 w-full h-full bg-black/60"

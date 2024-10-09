@@ -8,6 +8,12 @@
   background-size: cover ;
   background-repeat: no-repeat;
 }
+.bg-image-2 {
+  background-image: url("/images/bg2.webp");
+  background-position: right middle;
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
 
 form {
   padding: 0!important;
@@ -18,9 +24,11 @@ form {
   margin-bottom: 12px!important;
 }
 
+#_forms_13 ._form-content ._form_element ._field-wrapper select,
 #_forms_13 ._form-content ._form_element ._field-wrapper input[type=text] {
   background: transparent;
   background-color: '';
+  border: 1px solid #000;
   border-radius: 4px!important;
   padding: 6px 16px!important;
   font-size: 14px!important;
@@ -40,3 +48,10 @@ form {
     font-weight: 600!important;
     margin-top: 0!important;
   }
+
+form ._form-label {
+  position: absolute;
+  transform: translateY(4px) translateX(18px);
+  font-weight: normal!important;
+  opacity: .6!important;
+}
