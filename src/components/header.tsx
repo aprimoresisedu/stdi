@@ -14,7 +14,7 @@ interface HeaderProps {
     setModal: React.Dispatch<SetStateAction<boolean>>
 }
 
-export default function Header({ searchParams, modal, setModal }: HeaderProps) {
+export default function Header({ setModal }: HeaderProps) {
     return (
         <header className="min-h-screen bg-image flex flex-col items-center justify-center border-b-4 border-[#c4ecf4] px-4 pb-8">
             <div className="w-full max-w-7xl sm:grid sm:grid-cols-2 flex flex-col sm:translate-y-0 translate-y-24">
