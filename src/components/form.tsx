@@ -20,7 +20,7 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
     useEffect(() => {
         if (cont === 0) {
             const script = document.createElement('script');
-            script.src = 'https://aprimoresisedu.activehosted.com/f/embed.php?id=15';
+            script.src = 'https://aprimoresisedu.activehosted.com/f/embed.php?id=17';
             script.type = 'text/javascript';
             script.charset = 'utf-8';
             script.async = true;
@@ -64,16 +64,40 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
 
             // Adiciona o evento change a cada select
             selectElements.forEach(selectElement => {
-                selectElement.addEventListener('change', () => {
-                    const labelId = selectElement['name'].split('[')[1].replace(']', '')
 
-                    const label = document.querySelector<HTMLLabelElement>(`label[for="field[${labelId}]"]`);
+                if (selectElement.options.length > 0) {
+                    selectElement.remove(0)
+                }
 
-                    if (!label)
-                        return
+                const labelId = selectElement['name'].split('[')[1].replace(']', '')
 
-                    label.style.display = 'none';
-                });
+                const label = document.querySelector<HTMLLabelElement>(`label[for="field[${labelId}]"]`);
+
+                const disabledOption = document.createElement('option')
+
+                disabledOption.textContent = label?.textContent ?? ''
+                disabledOption.disabled = true
+                disabledOption.selected = true
+
+
+                selectElement.insertBefore(disabledOption, selectElement.firstChild)
+
+                // selectElement.addEventListener('change', () => {
+                //     const labelId = selectElement['name'].split('[')[1].replace(']', '')
+
+                //     const label = document.querySelector<HTMLLabelElement>(`label[for="field[${labelId}]"]`);
+
+                //     const disabledOption = document.createElement('option')
+
+                //     disabledOption.textContent = label?.textContent ?? ''
+
+                //     selectElement.insertBefore(disabledOption, selectElement.firstChild)
+
+                //     if (!label)
+                //         return
+
+                //     label.style.display = 'none';
+                // });
             });
         }, 2000)
     }, []);
@@ -86,7 +110,7 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
             ></div>
             <div className="w-full sm:max-w-lg max-w-sm flex items-center justify-center bg-[#f4eae9] z-50 rounded-xl">
                 <div className="p-8 w-full">
-                    <div id="_forms_15" className={`_form_15 w-full`}></div>
+                    <div id="_forms_17" className={`_form_17 w-full`}></div>
                 </div>
             </div>
         </div>

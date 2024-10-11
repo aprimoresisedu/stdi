@@ -20,12 +20,12 @@ form {
   margin: 0!important;
 }
 
-#_forms_15 ._form-content ._form_element  {
+#_forms_17 ._form-content ._form_element  {
   margin-bottom: 12px!important;
 }
 
-#_forms_15 ._form-content ._form_element ._field-wrapper select,
-#_forms_15 ._form-content ._form_element ._field-wrapper input[type=text] {
+#_forms_17 ._form-content ._form_element ._field-wrapper select,
+#_forms_17 ._form-content ._form_element ._field-wrapper input[type=text] {
   background: transparent;
   background-color: '';
   border: 1px solid #000;
@@ -51,12 +51,13 @@ form {
 
 form ._form-label {
   position: absolute;
+  display: none!important;
   transform: translateY(4px) translateX(18px);
   font-weight: normal!important;
   /* opacity: .6!important; */
 }
 
 /* Seleciona o label e esconde-o quando o select tem um valor válido */
-#_forms_15 ._form-content ._form_element ._field-wrapper select:valid + label._form-label {
+#_forms_17 ._form-content ._form_element ._field-wrapper select:valid + label._form-label {
   opacity: 0!important;
 }
