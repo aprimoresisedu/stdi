@@ -6,7 +6,7 @@
   background-image: url("/images/bg.webp");
   background-position: right middle;
   background-size: cover ;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 .bg-image-2 { 
   background-image: url("/images/bg2.webp"); 
