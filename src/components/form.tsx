@@ -9,7 +9,7 @@ interface FormProps {
         utm_term?: string
         utm_source?: string
         utm_medium?: string
-        pagina?: string
+        pagina?: string 
     }
     modal: boolean
     setModal: React.Dispatch<SetStateAction<boolean>>
