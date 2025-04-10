@@ -146,7 +146,7 @@ export function Form2({ modal, setModal }: FormProps) {
         const utm_source = new URLSearchParams(window.location.search).get('utm_source') || 'nao-traqueado'
         const utm_medium = new URLSearchParams(window.location.search).get('utm_medium') || 'nao-traqueado'
 
-        const response = await fetch('https://services.leadconnectorhq.com/hooks/V4asAT7IrV5IdErLl2Fr/webhook-trigger/557271f0-ffd3-4b58-81ad-b145db1b5e29', {
+        await fetch('https://services.leadconnectorhq.com/hooks/V4asAT7IrV5IdErLl2Fr/webhook-trigger/557271f0-ffd3-4b58-81ad-b145db1b5e29', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer pit-ee6d46b4-c92d-4e68-b3c6-735bf5bb2377`, // Armazene a chave de API em variáveis de ambiente
@@ -196,7 +196,7 @@ export function Form2({ modal, setModal }: FormProps) {
                                     <input
                                         required
                                         key={index}
-                                        // @ts-ignore
+                                        // @ts-expect-error
                                         value={data[field.name]}
                                         maxLength={field.name === 'cellphone' ? 15 : undefined}
                                         minLength={field.name === 'cellphone' ? 15 : undefined}
@@ -216,7 +216,7 @@ export function Form2({ modal, setModal }: FormProps) {
                                         onChange={(e: ChangeEvent<HTMLSelectElement>) => handleChange(e, field.name as keyof typeof initialData)}
                                     >
                                         <option className="text-zinc-500">Selecione:</option>
-                                        {/* @ts-ignore */}
+                                        {/* @ts-expect-error */}
                                         {selectOptions[`${field.name}`].map((opt: string, index: number) => (
                                             <option key={index + opt}>{opt}</option>
                                         ))}
