@@ -196,7 +196,7 @@ export function Form2({ modal, setModal }: FormProps) {
                                     <input
                                         required
                                         key={index}
-                                        // @ts-expect-error
+                                        // @ts-expect-error wait error no problem
                                         value={data[field.name]}
                                         maxLength={field.name === 'cellphone' ? 15 : undefined}
                                         minLength={field.name === 'cellphone' ? 15 : undefined}
@@ -216,7 +216,7 @@ export function Form2({ modal, setModal }: FormProps) {
                                         onChange={(e: ChangeEvent<HTMLSelectElement>) => handleChange(e, field.name as keyof typeof initialData)}
                                     >
                                         <option className="text-zinc-500">Selecione:</option>
-                                        {/* @ts-expect-error */}
+                                        {/* @ts-expect-error wait error no problem */}
                                         {selectOptions[`${field.name}`].map((opt: string, index: number) => (
                                             <option key={index + opt}>{opt}</option>
                                         ))}
