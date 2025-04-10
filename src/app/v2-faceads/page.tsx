@@ -1,6 +1,6 @@
 'use client'
 
-import { Form } from "@/components/form";
+import { Form2 } from "@/components/form2";
 import Header from "@/components/header";
 import Image from "next/image";
 import { useState } from "react";
@@ -20,11 +20,10 @@ export default function Home({ searchParams }: PageProps) {
   const [modal, setModal] = useState<boolean>(false)
 
   return (
-    <>
-      <Form
+    <div className="bg-zinc-950">
+      <Form2
         modal={modal}
         setModal={setModal}
-        searchParams={searchParams}
       />
       <div className="bg-[#3a0f54] py-4 flex items-center justify-center">
         <div className="relative w-24 h-8">
@@ -37,10 +36,10 @@ export default function Home({ searchParams }: PageProps) {
         </div>
       </div>
       <Header
-      imagePath="bg2"
-      btnLabel="Quero me inscrever gratuitamente"
-        title={<>Aprenda a tomar as <strong>melhores decisões como enfermeira</strong> nas intercorrências com segurança e autonomia</>}
-        subtitle={<>Organize as suas ações como enfermeira com o nosso Protocolo, desenvolvido e <strong>comprovado por mais de 50 mil horas</strong> de plantões.</>}
+        btnLabel="RESGATAR INGRESSO GRÁTIS"
+        imagePath="bg3"
+        title={<>Seminário Exclusivo: Tomada de Decisão Segura nas Intercorrências como Enfermeira</>}
+        subtitle={<>Para resgatar GRÁTIS um dos ingressos ainda disponíveis, é só apertar no botão abaixo enquanto ainda dá tempo:</>}
         modal={modal}
         setModal={setModal}
         searchParams={searchParams}
@@ -48,6 +47,6 @@ export default function Home({ searchParams }: PageProps) {
       <footer className="px-4 text-center -mt-2 bg-black py-4 flex justify-center text-white">
         <p>Dona do Plantão. Todos os direitos reservados. Políticas de Privacidade.</p>
       </footer>
-    </>
+    </div>
   );
 }
