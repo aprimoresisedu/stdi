@@ -34,10 +34,10 @@ export default function Header({ setModal, title, subtitle, btnLabel, imagePath 
                     <h1 className="text-2xl sm:text-3xl font-bold">{title}
                     </h1>
                     <p className="text-lg">{subtitle}</p>
-                    <div className="flex flex-col items-center gap-8">
+                    <div className="flex flex-col items-center gap-4">
                         <p className="flex items-center gap-2 text-white text-xl">
-                            <svg className="h-6 w-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M580-240q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" /></svg>
-                            <span className="font-semibold">Terça-feira (10/12) ao vivo às 20h</span>
+                            <svg className="h-6 w-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M140-160q-25 0-42.5-17.5T80-220q0-25 17.5-42.5T140-280h20v-440q0-33 23.5-56.5T240-800h560q17 0 28.5 11.5T840-760q0 17-11.5 28.5T800-720H240v440h180q25 0 42.5 17.5T480-220q0 25-17.5 42.5T420-160H140Zm460 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"/></svg>
+                            <span className="font-semibold">Online via Google Meet</span>
                         </p>
                         <button
                             onClick={() => setModal(true)}
