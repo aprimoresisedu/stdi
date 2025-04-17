@@ -64,6 +64,7 @@ const labels = [
 ]
 const selectOptions = {
     quanto_tempo_formada: [
+        'Ainda não estou formada',
         'Há 6 meses ou menos',
         'Entre 6 meses e 1 ano',
         'Entre 1 a 5 anos',
