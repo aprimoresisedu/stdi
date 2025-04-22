@@ -79,6 +79,7 @@ const selectOptions = {
         'Sim, já concluí',
         'Não, mas estou matriculada/cursando',
         'Não',
+        'Sou formada/estou cursando a Pós das DONAs do Plantão',
     ]
 }
 
