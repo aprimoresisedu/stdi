@@ -26,7 +26,7 @@ export default function Home() {
                   <span className="absolute text-sm font-semibold">80%</span>
                 </div>
                 <h3 className="text-2xl sm:text-4xl font-bold max-w-2xl">Faltam apenas 2 passos para você confirmar seu cadastro👇</h3>
-                <p>Na quarta-feira (04/06) ao vivo às 20h, você vai poder participar do Seminário: Tomada de Decisão na Intercorrência – para poder atuar de forma segura nas intercorrências, utilizando um passo a passo mental, comprovado pelas nossas +1000 alunas.</p>
+                <p>Na segunda-feira (16/06) ao vivo às 20h, você vai poder participar do Seminário: Tomada de Decisão na Intercorrência – para poder atuar de forma segura nas intercorrências, utilizando um passo a passo mental, comprovado pelas nossas +1000 alunas.</p>
                 <p>Então, para garantir que você vai receber todos os avisos e resgatar seu ingresso (e para garantir que você vai conseguir aproveitar essa oportunidade única), você precisa seguir os passos abaixo:</p>
               </div>
               <div className="bg-zinc-100 border rounded-xl p-4 sm:p-12 flex flex-col gap-12">
@@ -37,7 +37,7 @@ export default function Home() {
                     <p className="z-50 ">OBS: é muito importante que você salve o nosso contato para receber o link com prioridade. Sem cumprir esse passo, não poderemos garantir sua inscrição.</p>
                     <div className="mt-12">
                       <a
-                        href="https://chat.whatsapp.com/JIWAjCPFgaCCvqEBARZ03P"
+                        href="https://chat.whatsapp.com/DA5LNv35yXV0GlVJ6QsQuD"
                         className="text-white font-semibold bg-[#44a226] rounded-xl py-3 px-6 uppercase text-lg shadow"
                       >Confirmar inscrição</a>
                     </div>
