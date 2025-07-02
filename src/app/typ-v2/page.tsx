@@ -37,7 +37,7 @@ export default function Home() {
                     <p className="z-50 ">OBS: é muito importante que você salve o nosso contato para receber o link com prioridade. Sem cumprir esse passo, não poderemos garantir sua inscrição.</p>
                     <div className="mt-12">
                       <a
-                        href="https://chat.whatsapp.com/JCbsIEVmhiR6iRYumlDxdr"
+                        href="https://chat.whatsapp.com/DdcPgj0BkpFIqJVGpatNyY"
                         className="text-white font-semibold bg-[#44a226] rounded-xl py-3 px-6 uppercase text-lg shadow"
                       >Confirmar inscrição</a>
                     </div>
