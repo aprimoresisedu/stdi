@@ -26,7 +26,7 @@ export default function Home() {
                   <span className="absolute text-sm font-semibold">80%</span>
                 </div>
                 <h3 className="text-2xl sm:text-4xl font-bold max-w-2xl">Faltam apenas 2 passos para você confirmar seu cadastro no Seminário👇</h3>
-                <p>Na segunda-feira (01/07) ao vivo às 20h, você vai poder participar do Seminário: Tomada de Decisão na Intercorrência – para poder atuar de forma segura nas intercorrências, utilizando um passo a passo mental, comprovado pelas nossas +1000 alunas.</p>
+                <p>Na segunda-feira (14/07) ao vivo às 20h, você vai poder participar do Seminário: Tomada de Decisão na Intercorrência – para poder atuar de forma segura nas intercorrências, utilizando um passo a passo mental, comprovado pelas nossas +1000 alunas.</p>
                 <p>Então, para garantir que você vai receber todos os avisos e resgatar seu ingresso (e para garantir que você vai conseguir aproveitar essa oportunidade única), você precisa seguir os passos abaixo:</p>
               </div>
               <div className="bg-zinc-100 border rounded-xl p-4 sm:p-12 flex flex-col gap-12">
