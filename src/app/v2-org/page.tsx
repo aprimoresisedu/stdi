@@ -25,7 +25,7 @@ export default function Home({ searchParams }: PageProps) {
         modal={modal}
         setModal={setModal}
       />
-      <div className="bg-[#3a0f54] py-4 flex items-center justify-center">
+      <div className="bg-[#8D8D8D] py-4 flex items-center justify-center">
         <div className="relative w-24 h-8">
           <Image
             src="/images/logo2.webp"
@@ -38,7 +38,7 @@ export default function Home({ searchParams }: PageProps) {
       <Header
         btnLabel="RESGATAR INGRESSO GRÁTIS"
         imagePath="bg3"
-        title={<>Seminário Exclusivo: Tomada de Decisão Segura nas Intercorrências como Enfermeira</>}
+        title={<>Seminário Exclusivo: Torne-se almejada no Mercado de Trabalho para ser contratada ou conquistar um 2° vínculo como enfermeira</>}
         subtitle={<>Para resgatar GRÁTIS um dos ingressos ainda disponíveis, é só apertar no botão abaixo enquanto ainda dá tempo:</>}
         modal={modal}
         setModal={setModal}

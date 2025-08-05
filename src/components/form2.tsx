@@ -13,6 +13,7 @@ type DataType = {
     email: string
     cellphone: string
     quanto_tempo_formada: string
+    fora_faculdade: string
     trabalha_como_enfermeira: string
     tem_pos: string
 }
@@ -22,6 +23,7 @@ const initialData = {
     email: '',
     cellphone: '',
     quanto_tempo_formada: '',
+    fora_faculdade: '',
     trabalha_como_enfermeira: '',
     tem_pos: ''
 }
@@ -40,17 +42,17 @@ const fields = [
         type: 'text'
     },
     {
-        name: 'quanto_tempo_formada',
-        type: 'select'
-    },
-    {
         name: 'trabalha_como_enfermeira',
         type: 'select'
     },
     {
         name: 'tem_pos',
         type: 'select'
-
+        
+    },
+    {
+        name: 'fora_faculdade',
+        type: 'select'
     },
 ]
 
@@ -58,9 +60,9 @@ const labels = [
     'Nome Completo:',
     'Seu melhor Email:',
     'Digite seu Telefone',
-    'Há quanto tempo você está formada?',
     'Você já trabalha como enfermeira?',
     'Você já tem pós graduação?',
+    'Fora da faculdade, quanto você já investiu em capacitação',
 ]
 const selectOptions = {
     quanto_tempo_formada: [
@@ -71,13 +73,21 @@ const selectOptions = {
         'Há mais de 10 anos',
     ],
     trabalha_como_enfermeira: [
-        'Sim',
-        'Não'
+        'Não, estou buscando uma contratação',
+        'Sim, e busco um 2º vínculo (ou busco reposicionar minha carreira)',
+        'Sim, mas não busco contratação, só quero me sentir mais segura'
     ],
     tem_pos: [
         'Sim, já concluí',
         'Não, mas estou matriculada/cursando',
         'Não',
+    ],
+    fora_faculdade: [
+        'Nada, ainda estou na faculdade',
+        'Nada, já me formei mas nunca investi',
+        'Menos de R$2.000',
+        'Entre R$2.000-R$10.000',
+        'Mais de R$10.000',
     ]
 }
 
@@ -130,12 +140,13 @@ export function Form2({ modal, setModal }: FormProps) {
         e.preventDefault()
 
         setLoading(true)
-
-        const verifyField1 = data.tem_pos.length === 0 || data.quanto_tempo_formada.length === 0 || data.trabalha_como_enfermeira.length === 0
-        const verifyField2 = data.quanto_tempo_formada === 'Selecione' || data.tem_pos === 'Selecione' || data.trabalha_como_enfermeira === 'Selecione'
-
+        
+        const verifyField1 = data.tem_pos.length === 0 || data.fora_faculdade.length === 0
+        const verifyField2 = data.tem_pos === 'Selecione' || data.fora_faculdade === 'Selecione'
+        
         if (verifyField1 || verifyField2) {
             setError('Preencha os campos corretamente')
+            setLoading(false)
             console.log(`aqui`)
             return
         }
