@@ -25,7 +25,7 @@ export default function Home({ searchParams }: PageProps) {
         modal={modal}
         setModal={setModal}
       />
-      <div className="bg-[#8D8D8D] py-4 flex items-center justify-center">
+      <div className="bg-black py-4 flex items-center justify-center">
         <div className="relative w-24 h-8">
           <Image
             src="/images/logo2.webp"
