@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <main
-        className="min-h-screen bg-zinc-900 flex flex-col items-center justify-center border-b-4 border-[#c4ecf4] px-4 pb-8"
+        className="min-h-screen bg-gradient-to-b from-[#6D2D6B] to-[#1e1e1e] flex flex-col items-center justify-center border-b-4 border-[#c4ecf4] px-4 pb-8"
       >
         <section className="flex justify-center items-center pt-16 sm:pt-32">
           <div className="w-full max-w-xl">
@@ -26,7 +26,7 @@ export default function Home() {
                   <span className="absolute text-sm font-semibold">80%</span>
                 </div>
                 <h3 className="text-2xl sm:text-4xl font-bold max-w-2xl">Faltam apenas 2 passos para você confirmar seu cadastro👇</h3>
-                <p>Na segunda-feira (11/08) ao vivo às 20h, você vai poder participar do Seminário: Novo Mercado da Enfermagem – para se tornar uma enfermeira almejada pelo Mercado de Trabalho, utilizando um passo a passo de carreira comprovado pelas nossas +1000 alunas.</p>
+                <p><span className="text-[#C451C0] font-semibold">Na segunda-feira (18/08) ao vivo às 20h</span>, você vai poder participar do Seminário: Novo Mercado da Enfermagem – <span className="text-[#C451C0] font-semibold">para se tornar uma enfermeira almejada pelo Mercado de Trabalho</span>, utilizando um passo a passo de carreira comprovado pelas nossas +1000 alunas.</p>
                 <p>Então, para garantir que você vai receber todos os avisos e resgatar seu ingresso (e para garantir que você vai conseguir aproveitar essa oportunidade única), você precisa seguir os passos abaixo:</p>
               </div>
               <div className="bg-zinc-100 border rounded-xl p-4 sm:p-12 flex flex-col gap-12">
