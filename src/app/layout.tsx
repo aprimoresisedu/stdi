@@ -5,7 +5,7 @@ import "./globals.css";
 const montserrat = Montserrat({ weight: ['400', '600', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Seminário: Tomada de Decisão na Intercorrência",
+  title: "Seminário pra: Seminário: Novo Mercado da Enfermagem",
   description: "",
 };
 
