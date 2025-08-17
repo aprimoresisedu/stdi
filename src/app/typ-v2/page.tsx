@@ -37,7 +37,7 @@ export default function Home() {
                     <p className="z-50 ">OBS: é muito importante que você salve o nosso contato para receber o link com prioridade. Sem cumprir esse passo, não poderemos garantir sua inscrição.</p>
                     <div className="mt-12">
                       <a
-                        href="https://chat.whatsapp.com/JVr0pM5hHnq2bqrcQTYFKw"
+                        href="https://devzapp.com.br/api-engennier/campanha/api/redirect/66db3b85dc4be6000187554b"
                         className="text-white font-semibold bg-[#44a226] rounded-xl py-3 px-6 uppercase text-lg shadow"
                       >Confirmar inscrição</a>
                     </div>
