@@ -26,7 +26,7 @@ export default function Home() {
                   <span className="absolute text-sm font-semibold">80%</span>
                 </div>
                 <h3 className="text-2xl sm:text-4xl font-bold max-w-2xl">Faltam apenas 2 passos para você confirmar seu cadastro👇</h3>
-                <p><span className="bg-[#C451C0] text-white font-semibold">Na segunda-feira (25/08) ao vivo às 20h</span>, você vai poder participar do Seminário: Novo Mercado da Enfermagem – <span className="bg-[#C451C0] text-white font-semibold">para se tornar uma enfermeira almejada pelo Mercado de Trabalho</span>, utilizando um passo a passo de carreira comprovado pelas nossas +1000 alunas.</p>
+                <p><span className="bg-[#C451C0] text-white font-semibold">Na segunda-feira (01/09) ao vivo às 20h</span>, você vai poder participar do Seminário: Novo Mercado da Enfermagem – <span className="bg-[#C451C0] text-white font-semibold">para se tornar uma enfermeira almejada pelo Mercado de Trabalho</span>, utilizando um passo a passo de carreira comprovado pelas nossas +1000 alunas.</p>
                 <p>Então, para garantir que você vai receber todos os avisos e resgatar seu ingresso (e para garantir que você vai conseguir aproveitar essa oportunidade única), você precisa seguir os passos abaixo:</p>
               </div>
               <div className="bg-zinc-100 border rounded-xl p-4 sm:p-12 flex flex-col gap-12">
