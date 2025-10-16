@@ -25,15 +25,6 @@ export default function Home({ searchParams }: PageProps) {
         modal={modal}
         setModal={setModal}
       />
-      <div className="bg-black py-4 flex items-center justify-center">
-        <div className="relative w-24 h-8">
-          <Image
-            src="/images/logo2.webp"
-            alt="Logo Dona do Plantão"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
       </div>
       <Header
         btnLabel="RESGATAR INGRESSO GRÁTIS"
