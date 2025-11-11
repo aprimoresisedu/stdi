@@ -198,7 +198,7 @@ export function Form2({ modal, setModal }: FormProps) {
                 <form
                     onSubmit={formSubmited}
                     className=" w-full flex flex-col gap-2">
-                    <h4 className="text-2xl font-semibold text-center mb-2">Preencha os campos abaixo e obtenha o seu ingresso</h4>
+                    <h4 className="text-2xl font-semibold text-center mb-2">Preencha os campos abaixo e obtenha o seu cupom</h4>
                     {fields.map((field: { name: string, type: string }, index: number) => (
                         <>
                             {field.type === 'text' ? (
