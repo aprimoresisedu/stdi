@@ -27,10 +27,10 @@ export default function Home({ searchParams }: PageProps) {
       />
       </div>
       <Header
-        btnLabel="RESGATAR INGRESSO GRÁTIS"
-        imagePath="bg3"
-        title={<>Seminário Exclusivo: Torne-se almejada no Mercado de Trabalho para ser contratada ou conquistar um 2° vínculo como enfermeira</>}
-        subtitle={<>Para resgatar GRÁTIS um dos ingressos ainda disponíveis, é só apertar no botão abaixo enquanto ainda dá tempo:</>}
+        btnLabel="GARANTIR CUPOM DE DESCONTO"
+        imagePath="bg3.webp"
+        title={<>Black Friday DONA: Todos os nossos cursos com 50% de desconto</>}
+        subtitle={<>Para garantir o desconto e participar da Live de lançamento ao vivo, é só apertar no botão abaixo enquanto ainda dá tempo:</>}
         modal={modal}
         setModal={setModal}
         searchParams={searchParams}
